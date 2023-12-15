@@ -1,4 +1,4 @@
-package com.matchupdata.matchupdatarest;
+package com.matchupdata.matchupdatarest.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthCheckController
 {
-    @GetMapping("/HealthCheck")
+    @GetMapping("/api/HealthCheck")
     public String healthCheck() {
         return "Pong";
     }
